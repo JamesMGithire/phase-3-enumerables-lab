@@ -53,10 +53,11 @@ end
 # HINT: Try to use methods you've already written to solve this!
 def print_spiciest_foods(spicy_foods)
   # your code here
+  print_spicy_foods(spiciest_foods(spicy_foods))
 end
-
 # given an array of spicy foods, return an integer representing 
 # the average heat level of all the spicy foods in the array
 def average_heat_level(spicy_foods)
   # your code here
+  spicy_foods.map{|obj|obj[:heat_level]}.sum/spicy_foods.length
 end
